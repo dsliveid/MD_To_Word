@@ -355,15 +355,15 @@ def md_to_word(md_file, output_file):
     print(f"转换完成: {output_file}")
 
 if __name__ == "__main__":
-    # 转换 doc 文件夹中的所有 md 文件
-    doc_folder = 'doc'
+    # 转换 MdToWord 文件夹中的所有 md 文件
+    doc_folder = 'MdToWord'
     
-    # 检查 doc 文件夹是否存在
+    # 检查 MdToWord 文件夹是否存在
     if not os.path.exists(doc_folder):
         print(f"错误: 文件夹 '{doc_folder}' 不存在")
         exit(1)
     
-    # 获取 doc 文件夹中的所有 md 文件
+    # 获取 MdToWord 文件夹中的所有 md 文件
     md_files = [f for f in os.listdir(doc_folder) if f.endswith('.md')]
     
     if not md_files:

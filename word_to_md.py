@@ -340,16 +340,16 @@ def word_to_md(docx_file, output_md_file):
 
 
 if __name__ == '__main__':
-    # 转换 md 文件夹中的所有 docx 文件
-    md_folder = 'md'
+    # 转换 WordToMd 文件夹中的所有 docx 文件
+    md_folder = 'WordToMd'
 
-    # 检查 md 文件夹是否存在
+    # 检查 WordToMd 文件夹是否存在
     if not os.path.exists(md_folder):
         print(f"文件夹 '{md_folder}' 不存在，已创建")
         os.makedirs(md_folder)
         os.makedirs(os.path.join(md_folder, 'images'))
 
-    # 获取 md 文件夹中的所有 docx 文件
+    # 获取 WordToMd 文件夹中的所有 docx 文件
     docx_files = [f for f in os.listdir(md_folder) if f.endswith('.docx')]
 
     if not docx_files:
